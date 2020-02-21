@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doe Sangue, Doe Vida!</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -19,10 +23,21 @@
     </header>
 
     <section class="form hide">
-      <h2>Entre para lista de doadores</h2>
-      <form action="/">
+      <form action="/" method="POST">
+        <h2>Histórico de Hepatite?</h2>
+        <div class="btn-group btn-group-toggle" id="toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked /> Sim
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off" /> Não
+          </label>
+        </div>
         <input type="text" name="name" placeholder="Digite seu nome completo" />
         <input type="email" name="email" placeholder="Digite seu e-mail" />
+        <input type="text" name="phone" placeholder="Whatsapp" />
+        <input type="text" name="state" placeholder="Digite seu Estádo" />
+        <input type="text" name="city" placeholder="Digite sua cidade" />
         <input type="text" name="blood" placeholder="Digite seu tipo sanguíneo" />
         <button type="submit">Quero Doar</button>
       </form>
@@ -31,25 +46,20 @@
     <main>
       <h2>Últimos <span>doadores</span></h2>
       <section class="donors">
+        {% for donor in donors %}
         <div class="donor">
-          <div class="blood">AB+</div>
-          <p>Eduardo Alexandre</p>
+          <div class="blood">{{donor.blood}}</div>
+          <p>{{donor.name}}</p>
         </div>
-        <div class="donor">
-          <div class="blood">AB-</div>
-          <p>Victor Hugor</p>
-        </div>
-        <div class="donor">
-          <div class="blood">AB+</div>
-          <p>André Alves</p>
-        </div>
-        <div class="donor">
-          <div class="blood">AB-</div>
-          <p>Eduardo Silva</p>
-        </div>
+        {%endfor%}
       </section>
     </main>
     <footer>Com 😍 Eduardo Developer</footer>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

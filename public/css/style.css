@@ -33,7 +33,7 @@ main h2 span {
 .form h2 {
   text-align: right;
   color: #eee;
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 header,
@@ -50,12 +50,17 @@ main {
   max-width: 500px;
 }
 
+#toggle {
+  margin-top: 5px;
+  margin-bottom: 10px !important;
+}
+
 header button {
   margin-top: 16px;
   padding: 8px 16px;
   background-color: #ff4f4f;
   color: #eee;
-  border: none;
+  border: none !important;
 }
 
 .logo {
@@ -75,12 +80,12 @@ section.form {
 
 form input,
 form button {
-  width: 100%;
+  width: 221%;
   margin-bottom: 4px;
   box-sizing: border-box;
   padding: 8px 16px;
-  border-radius: 2px;
-  border: 1px #ffffff88 solid
+  border-radius: 2px !important;
+  border: 1px #ffffff88 solid !important
 }
 
 form input {
@@ -119,6 +124,7 @@ main .donors {
 
 .donor p {
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 footer {
