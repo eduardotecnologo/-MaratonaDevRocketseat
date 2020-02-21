@@ -1,0 +1,22 @@
+{
+  "name": "-maratonadevrocketseat",
+  "version": "1.0.0",
+  "description": "Software para lista de doadores de sangue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardotecnologo/-MaratonaDevRocketseat.git"
+  },
+  "author": "Eduardo developer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduardotecnologo/-MaratonaDevRocketseat/issues"
+  },
+  "homepage": "https://github.com/eduardotecnologo/-MaratonaDevRocketseat#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
