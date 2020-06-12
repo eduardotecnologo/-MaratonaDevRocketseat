@@ -1,3 +1,19 @@
 {
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "files.associations": {
+    "*.html": "njk"
+  },
+  "emmet.includeLanguages": {
+    "njk": "html"
+  },
+  "vsicons.associations.files": [
+    {
+      "icon": "nunjucks",
+      "extensions": [
+        "html"
+      ],
+      "format": "svg"
+    }
+  ],
+  "workbench.iconTheme": "vscode-icons"
 }
