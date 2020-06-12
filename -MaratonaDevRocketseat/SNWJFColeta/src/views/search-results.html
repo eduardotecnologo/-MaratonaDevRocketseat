@@ -14,44 +14,40 @@
   {% include "partials/page-header.html"%}
 
   <main>
-    <h3>
-      <strong>2 pontos encontrados</strong>
-    </h3>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1565204294092-1b0870bd37d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Coletora">
-        <h1>Coletora</h1>
-        <h4>Resíduos Eletrônicos, Lâmpadas</h4>
-        <p>Juiz de Fora, Minas Gerais
-          <br/>
-          Rua 01, Centro
-          <br/>
-          Número 02
-        </p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1567393528677-d6adae7d4a0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Papersider">
-        <h1>Papersider</h1>
-        <h4>Papéis e Papelão</h4>
-        <p>Juiz de Fora, Minas Gerais
-          <br>
-          Rua 01, Centro
-          <br/>
-          Número 02
-        </p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1567393528677-d6adae7d4a0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Papersider">
-        <h1>Papersider</h1>
-        <h4>Papéis e Papelão</h4>
-        <p>Juiz de Fora, Minas Gerais
-          <br>
-          Rua 01, Centro
-          <br/>
-          Número 02
-        </p>
+
+    {% if total > 0 %}
+
+      <h4>
+        {{total}}
+        <strong>pontos</strong>
+        encontrados
+      </h4>
+      <div class="cards">
+
+        {% for place in places %}
+          <div class="card">
+            <img src="{{place.image}}" alt="Coletora">
+            <h1>{{place.name}}</h1>
+            <h4>{{place.items}}</h4>
+            <p>{{place.address}}
+              <br/>
+              {{place.address2}}
+              <br/>
+              {{place.state}},
+              {{place.city}}
+            </p>
+          </div>
+        {% endfor %}
+
       </div>
 
-    </div>
+      {%else%}
+
+      <h4>
+        <strong>Nenhum</strong>
+        local encontrado!</h4>
+
+    {% endif %}
+
   </main>
 {% endblock content %}

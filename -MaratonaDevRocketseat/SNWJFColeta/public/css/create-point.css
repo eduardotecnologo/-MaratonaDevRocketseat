@@ -44,8 +44,20 @@ form fieldset {
   border: 0;
 }
 
+form legend {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 form legend h2 {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+form legend span {
+  color: var(--title-color);
 }
 
 form .field {
