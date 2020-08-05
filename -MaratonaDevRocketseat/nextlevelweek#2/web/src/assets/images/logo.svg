@@ -35,8 +35,8 @@ viewBox="0 0 29700 21000"
     @font-face { font-family:"Arial Rounded MT Bold";font-variant:normal;font-weight:normal;src:url("#FontID1") format(svg)}
     @font-face { font-family:"Helvetica";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
     .str0 {stroke:#6842C2;stroke-width:20;stroke-miterlimit:22.9256}
-    .fil1 {fill:#E6E7E8}
-    .fil2 {fill:#D2D4D5}
+    .fil1 {fill:#fff}
+    .fil2 {fill:#fff}
     .fil0 {fill:#674E9D}
     .fnt1 {font-weight:normal;font-size:9439.18px;font-family:'Arial Rounded MT Bold'}
     .fnt0 {font-weight:normal;font-size:20903.11px;font-family:'Helvetica'}
