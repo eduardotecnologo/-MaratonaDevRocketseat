@@ -13,7 +13,7 @@ function TeacherItem(){
           <span>Ferroviário</span>
         </div>
       </header>
-      <p>Sislog Operator at MRS Logística, Desenvolvedor FullStack na empresa Eazy Digital <br />
+      <p>Sislog Operator at MRS Logística, Software Engineer  na empresa Eazy Digital <br />
         <br />Apaixonado por programação e viciado em café, entusiasta Filosofia Hacker
           </p>
       <footer>
