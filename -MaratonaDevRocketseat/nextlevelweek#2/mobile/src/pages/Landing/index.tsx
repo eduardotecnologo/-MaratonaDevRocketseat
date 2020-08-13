@@ -1,12 +1,14 @@
 import React from 'react';
-import {View,Image,Text, TouchableOpacity} from 'react-native';
+import { View, Image, Text, TouchableOpacity} from 'react-native';
 import styles from './styles';
 import landingImg from '../../assets/images/landing.png';
 import studyIcon from '../../assets/images/icons/study.png';
 import giveClasses from '../../assets/images/icons/give-classes.png';
 import heartIcon from '../../assets/images/icons/heart.png';
+import { useNavigation } from '@react-navigation/native';
 
 function Landing(){
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Image source={landingImg} style={styles.banner}/>
@@ -24,10 +26,10 @@ function Landing(){
           <Text style={styles.buttonText}>Estudar</Text>
         </TouchableOpacity>
 
-      <TouchableOpacity style={[styles.button, styles.buttonSecondary]}>
+        <TouchableOpacity style={[styles.button, styles.buttonSecondary]}>
           <Image source={giveClasses} />
           <Text style={styles.buttonText}>Dar aulas</Text>
-      </TouchableOpacity>
+        </TouchableOpacity>
       </View>
 
       <Text style={styles.totalConnections}>

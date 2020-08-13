@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-function GiveClass(){
+function GiveClasses(){
   return <View />
 }
-export default GiveClass;
+export default GiveClasses;
