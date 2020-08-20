@@ -7,8 +7,6 @@ import unfavoriteIcon from '../../assets/images/icons/unfavorite.png';
 import whatsappIcon from '../../assets/images/icons/whatsapp.png';
 import styles from './styles';
 
-
-
 function TeacherItem (){
   return (
     <View style={styles.container}>
@@ -18,7 +16,7 @@ function TeacherItem (){
           source={{ uri:'https://github.com/eduardotecnologo.png'}}/>
           <View style={styles.profileInfo}>
             <Text style={styles.name}>Eduardo Alexandre</Text>
-            <Text style={styles.subject}>Química</Text>
+            <Text style={styles.subject}>Química Analítica</Text>
           </View>
       </View>
 
@@ -37,8 +35,8 @@ function TeacherItem (){
         </Text>
 
         <View style={styles.buttonsContainer}>
-          <RectButton style={styles.favoriteButton}>
-            <Image source={heartOutlineIcon} />
+          <RectButton style={[styles.favoriteButton, styles.favorited]}>
+            <Image source={unfavoriteIcon} />
           </RectButton>
 
           <RectButton style={styles.contactButton}>
