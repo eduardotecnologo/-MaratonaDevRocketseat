@@ -36,15 +36,15 @@ const styles = StyleSheet.create({
   bio:{
     marginHorizontal:24,
     fontFamily:'Poppins_400Regular',
-    fontSize:14,
-    lineHeight:24,
+    fontSize:18,
+    lineHeight:30,
     color: '#6a6180'
   },
   footer:{
     backgroundColor:'#fafafc',
     padding:24,
     alignItems:'center',
-    marginTop:24
+    marginTop:40
   },
   price:{
     fontFamily:'Poppins_400Regular',
@@ -68,6 +68,9 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     marginRight:8
+  },
+  favorited:{
+    backgroundColor:'#e33d3d'
   },
   contactButton:{
     backgroundColor: '#04d361',
